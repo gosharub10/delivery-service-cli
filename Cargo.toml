@@ -1,0 +1,8 @@
+[package]
+name = "delivery-service-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+sqlx = {version = "0.8.2", feature =["postgres", "runtime-async-std"]}
