@@ -1,0 +1,10 @@
+services:
+  db: 
+    build: ./init_db
+    container_name: delivery
+    ports:
+      - "1234:5432"
+    environment:
+      - POSTGRES_USER=username
+      - POSTGRES_DB=delivery
+      - POSTGRES_PASSWORD=password

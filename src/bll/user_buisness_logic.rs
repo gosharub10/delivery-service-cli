@@ -1,5 +1,3 @@
-use postgres::Error;
-
 use crate::dal::{entites::user::User, interfaces::data_access_trat::DataAccessTrait};
 
 pub struct UserBuisnessLogic <T: DataAccessTrait<User>>{

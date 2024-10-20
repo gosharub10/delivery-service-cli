@@ -6,3 +6,4 @@ edition = "2021"
 [dependencies]
 dotenv = "0.15.0"
 postgres = "0.19.9"
+prettytable = "0.10.0"

@@ -1,5 +1,3 @@
-use std::fmt::format;
-
 use postgres::{Client, NoTls};
 
 use crate::dal::{entites::user:: User, interfaces::data_access_trat::DataAccessTrait};
@@ -14,13 +12,6 @@ impl DataAccess {
         Ok(DataAccess{pool})
     }
 }
-
-// pub id : i32,
-// pub name: String,
-// pub email: String,
-// pub password: String,
-// pub phone: String,
-// pub address: String
 
 impl DataAccessTrait<User> for DataAccess {
     fn create(&mut self,entity: User) -> Result<(), postgres::Error> {
